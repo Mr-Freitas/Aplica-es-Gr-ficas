@@ -1,0 +1,175 @@
+.main {
+    flex-grow: 1;
+    background-color: rgb(247, 242, 233);
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    padding: 24px 20px 12px 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(30, 30, 30);
+    letter-spacing: 1px;
+}
+
+
+.card {
+    background-color: rgb(140, 168, 209);
+    border-radius: 18px;
+    margin: 8px 16px;
+    padding: 16px;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    white-space: normal;
+}
+
+/* ---------- Card: Tarefas Rápidas ---------- */
+
+.card--quick {
+    margin-top: 16px;
+}
+
+.quick-task-input {
+    background-color: rgb(206, 190, 216);
+    border-radius: 20px;
+    border-width: 0;
+    height: 40px;
+    padding: 0 16px;
+    -unity-text-align: middle-left;
+    color: rgb(90, 80, 100);
+    font-size: 24px;
+}
+
+.quick-task-input > TextInput {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+/* ---------- Card: Mesa de Trabalho ---------- */
+
+.card--tasks {
+    flex-grow: 1;
+    min-height: 400px;
+}
+
+.task-list {
+    flex-grow: 1;
+}
+
+.task-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 4px;
+}
+
+.task-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 14px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.task-icon--faculdade {
+    background-color: rgb(24, 91, 96);
+}
+
+.task-icon--trabalho {
+    background-color: rgb(20, 60, 110);
+}
+
+.task-icon--vida {
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.task-label {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ---------- Navegação inferior ---------- */
+
+.nav {
+    flex-grow: 0;
+    height: 60px;
+}
+/* ---------- Navegação inferior ---------- */
+
+.nav {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 4px 0;
+}
+
+.nav-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.nav-icon--home {
+    background-color: rgb(140, 168, 209);
+}
+
+.nav-icon--tasks {
+    background-color: rgb(206, 190, 216);
+}
+
+.nav-icon--calendar {
+    background-color: rgb(24, 91, 96);
+}
+
+.nav-label {
+    font-size: 24px;
+    color: rgb(120, 120, 120);
+    -unity-text-align: middle-center;
+}
+
+.nav-item--active .nav-label {
+    color: rgb(30, 30, 30);
+    -unity-font-style: bold;
+}

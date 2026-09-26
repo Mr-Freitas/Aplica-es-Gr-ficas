@@ -1,0 +1,29 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/TasksQuick/TaskQuickStyle.uss?fileID=7433441132597879392&amp;guid=7ac7ac7e207e403468bd534466efa972&amp;type=3#TaskQuickStyle"/>
+    <ui:VisualElement name="main" class="main">
+        <ui:VisualElement name="header" class="header">
+            <ui:Label text="TAREFAS RÁPIDAS" name="title" class="title"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="input-area">
+            <ui:TextField name="input-new-quick-task" placeholder-text="DIGITE UMA TAREFA..." class="quick-task-input" style="font-size: 32px;"/>
+            <ui:Button name="btn-add-quick-task" text="+" class="btn-add" style="font-size: 44px;"/>
+        </ui:VisualElement>
+        <ui:ScrollView name="task-scroll-view" class="card card--list">
+            <ui:VisualElement name="task-list-container" class="task-list"/>
+        </ui:ScrollView>
+        <ui:VisualElement name="nav" class="nav">
+            <ui:Button name="nav-home" class="nav-item">
+                <ui:VisualElement class="nav-icon nav-icon--home"/>
+                <ui:Label text="HOME" class="nav-label"/>
+            </ui:Button>
+            <ui:Button name="nav-quick-tasks" class="nav-item nav-item--active">
+                <ui:VisualElement class="nav-icon nav-icon--tasks"/>
+                <ui:Label text="TAREFAS" class="nav-label"/>
+            </ui:Button>
+            <ui:Button name="nav-calendar" class="nav-item">
+                <ui:VisualElement class="nav-icon nav-icon--calendar"/>
+                <ui:Label text="CALENDÁRIO" class="nav-label"/>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

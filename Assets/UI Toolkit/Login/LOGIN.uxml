@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Login/LoginStyle.uss?fileID=7433441132597879392&amp;guid=77026be736920024fbe05ce639b8afe6&amp;type=3#LoginStyle"/>
+    
+    <!-- 1. A classe "main" volta a ficar no container mais externo para colorir 100% da tela -->
+    <ui:VisualElement class="main" style="width: 100%; height: 100%;">
+        
+        <!-- 2. O ScrollView fica por dentro, totalmente transparente -->
+        <ui:ScrollView style="flex-grow: 1; width: 100%; height: 100%;">
+            
+            <!-- 3. Este container organiza os itens no meio da tela -->
+            <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; min-height: 100%; padding-top: 10%; padding-bottom: 10%;">
+                
+                <ui:VisualElement class="logo-container">
+                    <ui:Image class="logo" style="height: 881px; width: 809px;"/>
+                </ui:VisualElement>
+
+                <!-- Container: Campos de Input -->
+                <ui:VisualElement class="inputs-container">
+                    <ui:TextField label="E-mail:" name="emailTextField" class="input-field"/>
+                    <ui:TextField label="Senha:" name="passwordTextField" password="true" class="input-field"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="buttons-container">
+                    <ui:Button text="CADASTRE-SE" id="btn1" name="registerButton" class="btn-primary"/>
+                    <ui:Button text="ENTRAR" id="btn2" name="loginButton" class="btn-secondary"/>
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+            
+        </ui:ScrollView>
+        
+    </ui:VisualElement>
+</ui:UXML>

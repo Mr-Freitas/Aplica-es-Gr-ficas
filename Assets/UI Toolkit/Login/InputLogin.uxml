@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Login/LoginStyle.uss?fileID=7433441132597879392&amp;guid=77026be736920024fbe05ce639b8afe6&amp;type=3#LoginStyle"/>
+    <ui:VisualElement name="main" class="main" style="flex-grow: 1;"/>
+</ui:UXML>

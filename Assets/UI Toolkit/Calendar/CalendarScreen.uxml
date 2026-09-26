@@ -1,0 +1,51 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    
+    <!-- Usando o mesmo estilo da Home para manter o padrão -->
+    <Style src="project://database/Assets/UI%20Toolkit/Home/HomeStyle.uss?fileID=7433441132597879392&amp;guid=e981e28a8372da2499b1d7d8cd6cfcbc&amp;type=3#HomeStyle"/>
+    
+    <ui:VisualElement name="main" class="main" style="background-color: white;">
+        
+        <!-- HEADER Padrão -->
+        <ui:VisualElement name="header" class="header">
+            <ui:Label text="MEU CALENDÁRIO" name="title" class="title"/>
+        </ui:VisualElement>
+        
+        <!-- CONTROLES DO MÊS -->
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center; padding: 20px; background-color: #f0f0f0; border-radius: 15px; margin: 20px;">
+            <ui:Button name="btn-prev-month" text="&lt;" style="font-size: 40px; width: 80px; height: 80px; background-color: #2196F3; color: white; border-radius: 10px; -unity-font-style: bold;"/>
+            <ui:Label name="label-month-year" text="Setembro 2026" style="font-size: 40px; -unity-font-style: bold; color: black;"/>
+            <ui:Button name="btn-next-month" text="&gt;" style="font-size: 40px; width: 80px; height: 80px; background-color: #2196F3; color: white; border-radius: 10px; -unity-font-style: bold;"/>
+        </ui:VisualElement>
+
+        <!-- DIAS DA SEMANA -->
+        <ui:VisualElement style="flex-direction: row; justify-content: space-around; margin-left: 20px; margin-right: 20px; margin-bottom: 10px;">
+            <ui:Label text="Dom" style="font-size: 28px; -unity-font-style: bold; color: #f44336; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Seg" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Ter" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Qua" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Qui" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Sex" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+            <ui:Label text="Sáb" style="font-size: 28px; -unity-font-style: bold; color: black; width: 14%; -unity-text-align: middle-center;"/>
+        </ui:VisualElement>
+
+        <!-- GRID DE DIAS (O C# vai popular isso aqui dentro usando flex-wrap) -->
+        <ui:VisualElement name="calendar-days-container" style="flex-direction: row; flex-wrap: wrap; margin-left: 10px; margin-right: 10px; flex-grow: 1; align-content: flex-start;"/>
+
+        <!-- NAVEGAÇÃO INFERIOR (Igual a Home) -->
+        <ui:VisualElement name="nav" class="nav">
+            <ui:Button name="nav-home" class="nav-item">
+                <ui:VisualElement class="nav-icon nav-icon--home"/>
+                <ui:Label text="HOME" class="nav-label"/>
+            </ui:Button>
+            <ui:Button name="nav-quick-tasks" class="nav-item">
+                <ui:VisualElement class="nav-icon nav-icon--tasks"/>
+                <ui:Label text="TAREFAS" class="nav-label"/>
+            </ui:Button>
+            <ui:Button name="nav-calendar" class="nav-item nav-item--active">
+                <ui:VisualElement class="nav-icon nav-icon--calendar"/>
+                <ui:Label text="CALENDÁRIO" class="nav-label"/>
+            </ui:Button>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

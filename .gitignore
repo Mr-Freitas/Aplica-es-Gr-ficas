@@ -1,0 +1,56 @@
+# Pastas geradas automaticamente pela Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Arquivos de captura de memória e gravações (podem ser gigantes)
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Arquivos de cache da IDE (Visual Studio, Rider)
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Metadados gerados pela Unity que não precisam de versão
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Relatórios de crash da Unity
+sysinfo.txt
+crashlytics-build.properties
+
+# Builds compiladas (nunca suba as builds pro repositório principal)
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Arquivos de sistema operacional (Mac e Windows)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

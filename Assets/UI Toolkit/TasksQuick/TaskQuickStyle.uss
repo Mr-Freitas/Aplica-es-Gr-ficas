@@ -1,0 +1,170 @@
+/* ---------- Base (Mantido da paleta original) ---------- */
+.main {
+    flex-grow: 1;
+    background-color: rgb(247, 242, 233);
+}
+
+.header {
+    padding: 24px 20px 12px 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(30, 30, 30);
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: rgb(140, 168, 209);
+    border-radius: 18px;
+    margin: 8px 16px;
+    padding: 16px;
+}
+
+/* ---------- Área de Input da Tarefa ---------- */
+.input-area {
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 16px 16px 16px;
+}
+
+.quick-task-input {
+    flex-grow: 1;
+    background-color: rgb(206, 190, 216);
+    border-radius: 20px;
+    border-width: 0;
+    height: 60px;
+    padding: 0 16px;
+    -unity-text-align: middle-left;
+    color: rgb(90, 80, 100);
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.quick-task-input > TextInput {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+.btn-add {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: rgb(24, 91, 96); /* Verde escuro da paleta */
+    color: white;
+    font-size: 40px;
+    -unity-font-style: bold;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-add:active {
+    background-color: rgb(20, 60, 110);
+}
+
+/* ---------- Lista de Tarefas ---------- */
+.card--list {
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+.task-list {
+    flex-grow: 1;
+}
+
+/* Estilo do item individual gerado via código */
+.todo-item {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25); /* Fundo semi-transparente sobre o azul do card */
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+}
+
+.todo-label {
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.btn-delete {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 20px;
+    -unity-font-style: bold;
+    border-width: 0;
+    margin: 0;
+    margin-left: 12px;
+}
+
+.btn-delete:active {
+    background-color: rgb(200, 60, 60); /* Vermelho para dar feedback de exclusão */
+}
+
+/* ---------- Navegação inferior (Mantida) ---------- */
+.nav {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 4px 0;
+}
+
+.nav-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.nav-icon--home {
+    background-color: rgb(140, 168, 209);
+}
+
+.nav-icon--tasks {
+    background-color: rgb(206, 190, 216);
+}
+
+.nav-icon--calendar {
+    background-color: rgb(24, 91, 96);
+}
+
+.nav-label {
+    font-size: 24px;
+    color: rgb(120, 120, 120);
+    -unity-text-align: middle-center;
+}
+
+.nav-item--active .nav-label {
+    color: rgb(30, 30, 30);
+    -unity-font-style: bold;
+}
